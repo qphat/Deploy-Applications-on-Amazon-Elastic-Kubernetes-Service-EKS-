@@ -39,9 +39,10 @@ The application follows a microservices architecture:
 
 ```
 Lab - Deploy Applications on Amazon Elastic Kubernetes Service (EKS)/
-├── README.md                           # This file
+├── README.md                          # This file
 ├── detail.sh                          # Main deployment script
-├── k8s-architecture.png               # Architecture diagram
+└── images/
+    └── k8s-architecture.png           # Architecture diagram
 └── environment/
     ├── cluster.yaml                   # EKS cluster configuration
     ├── deployment-frontend.yaml       # Frontend deployment
@@ -217,8 +218,3 @@ aws dynamodb delete-table --table-name Employees --region $AWS_REGION
 - Backend connects to DynamoDB for data persistence
 - Service accounts are configured for AWS service access
 - The cluster uses managed node groups for easier scaling and maintenance
-
-
-## 📄 License
-
-This project is for educational purposes as part of AWS EKS lab exercises.
